@@ -1,5 +1,5 @@
 import { Fraction } from "fractional";
-console.log(Fraction);
+
 const icons = new URL("../../img/icons.svg", import.meta.url);
 
 class RecipeView {
