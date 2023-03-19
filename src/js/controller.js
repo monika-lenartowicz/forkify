@@ -11,9 +11,9 @@ import { async } from "regenerator-runtime";
 
 ///////////////////////////////////////
 
-if (module.hot) {
-	module.hot.accept();
-}
+// if (module.hot) {
+// 	module.hot.accept();
+// }
 
 const controlRecipes = async function () {
 	try {
@@ -45,7 +45,9 @@ const controlSearchResult = async function () {
 
 		// 3) render results
 		// console.log(model.state.search.results);
-		resultsView.render(model.state.search.results);
+		// resultsView.render(model.state.search.results);
+
+		resultsView.render(model.getSearchResultsPage(1));
 	} catch (error) {
 		console.log(error);
 	}
