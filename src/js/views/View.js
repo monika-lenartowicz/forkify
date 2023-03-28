@@ -2,7 +2,15 @@ const icons = new URL("../../img/icons.svg", import.meta.url);
 
 export default class View {
 	_data;
-
+	/**
+	 * render the received object to the DOM
+	 * @param {Object | Object[]} data to data to be rendered (e.g recipe)
+	 * @param {boolean} [render= true] if false, create markup string instead of rendering to the DOM
+	 * @returns {undefined | string} A markup string is returned if render=false
+	 * @this {Object} View instance
+	 * @author Jonas Schmedtmann
+	 * @todo Finish implementation
+	 */
 	render(data, render = true) {
 		if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
 
