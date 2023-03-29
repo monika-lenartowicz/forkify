@@ -1,3 +1,5 @@
+import { async } from "regenerator-runtime";
+import "regenerator-runtime/runtime";
 const icons = new URL("../../img/icons.svg", import.meta.url);
 
 export default class View {
